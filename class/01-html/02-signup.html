@@ -2,32 +2,48 @@
 <html lang="ko">
   <head>
     <title>회원가입</title>
+    <link href="./02-signup.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>회원가입</h1>
-    <br />
-    <input type="text" placeholder="이메일을 입력해 주세요." /><br /><br />
-    <input type="text" placeholder="이름을 입력해 주세요." /><br /><br />
-    <input
-      type="password"
-      placeholder="비밀번호를 입력해 주세요."
-    /><br /><br />
-    <input
-      type="password"
-      placeholder="비밀번호를 다시 입력해 주세요."
-    /><br /><br />
-    <>
-      <option disabled="true" selected="true">지역을 선택하세요.</option>
-      <option>서울</option>
-      <option>경기</option>
-      <option>인천</option>
-      <option>부산</option></select
-    ><br /><br />
-    <input type="radio" name="gender" value="female" />여성
-    <input type="radio" name="gender" value="male" />남성<br /><br />
-    <input type="checkbox" />이용약관 개인정보 수집에 동의합니다.<br />
-    <hr />
-    <button>가입하기</button>
-    <!-- <input type="button" value="가입하기" /> -->
+    <div class="pb">
+      <div class="ib">
+        <div class="cb">
+          <h1 class="title">회원 가입을 위해<br />정보를 입력해주세요</h1>
+
+          <label>* 이메일 <input class="ip_txt" type="text" /> </label>
+
+          <div>
+            <label>* 이름 </label>
+            <input class="ip_txt" type="text" />
+          </div>
+          <div>
+            <label>* 비밀번호 </label>
+            <input class="ip_txt" type="password" />
+          </div>
+          <div>
+            <label>* 비밀번호 확인 </label>
+            <input class="ip_txt" type="password" />
+          </div>
+
+          <div class="rd_gender">
+            <label>
+              <input type="radio" name="gender" value="female" />여성
+            </label>
+            <label>
+              <input type="radio" name="gender" value="male" />남성
+            </label>
+          </div>
+
+          <label>
+            <input type="checkbox" /> 이용약관 개인정보 수집에 동의합니다.
+          </label>
+
+          <hr />
+
+          <button>가입하기</button>
+          <!-- <input type="button" value="가입하기" /> -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
